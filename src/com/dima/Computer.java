@@ -19,9 +19,9 @@ public class Computer {
     }
 
     public void computerOff(){
-        System.out.println("Компьютер выключается.");
         for(UsbDevise runner : usbDevises){
             runner.disconnect();
         }
+        System.out.println("Компьютер выключается.");
     }
 }

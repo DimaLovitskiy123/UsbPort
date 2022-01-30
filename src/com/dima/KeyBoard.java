@@ -1,6 +1,6 @@
 package com.dima;
 
-public class KeyBoard extends AbstractUsbDevise {
+public class KeyBoard extends AbstractUsbDevise implements UsbDevise{
 
     private final static String keyboard = "Клавиатура";
 
@@ -8,7 +8,7 @@ public class KeyBoard extends AbstractUsbDevise {
         super(model, keyboard);
     }
 
-    /*@Override
+    @Override
     public void connect() {
         System.out.println("Клавиатура модели " + getModel() + " подключена.");
     }
@@ -16,5 +16,5 @@ public class KeyBoard extends AbstractUsbDevise {
     @Override
     public void disconnect() {
         System.out.println("Клавиатура модели " + getModel() + " отключена.");
-    }*/
+    }
 }

@@ -1,6 +1,6 @@
 package com.dima;
 
-public abstract class AbstractUsbDevise implements UsbDevise{
+public abstract class AbstractUsbDevise {
     private String model;
     private String typeOfDevise;
 
@@ -9,15 +9,7 @@ public abstract class AbstractUsbDevise implements UsbDevise{
         this.typeOfDevise = typeOfDevise;
     }
 
-    @Override
-    public void connect() {
-        System.out.println(getTypeOfDevise() + " модели " + getModel() + " подключена.");
-    }
 
-    @Override
-    public void disconnect() {
-        System.out.println(getTypeOfDevise() + " модели " + getModel() + " отключена.");
-    }
 
     public String getModel() {
         return model;

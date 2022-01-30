@@ -1,6 +1,6 @@
 package com.dima;
 
-public class ComputerMouse extends AbstractUsbDevise {
+public class ComputerMouse extends AbstractUsbDevise implements UsbDevise{
 
     private final static String mouse = "Мышь";
 
@@ -8,7 +8,7 @@ public class ComputerMouse extends AbstractUsbDevise {
         super(model, mouse);
     }
 
-  /*  @Override
+    @Override
     public void connect() {
         System.out.println("Мышь модели " + getModel() + " подключена.");
     }
@@ -16,5 +16,5 @@ public class ComputerMouse extends AbstractUsbDevise {
     @Override
     public void disconnect() {
         System.out.println("Мышь модели " + getModel() + " отключена.");
-    }*/
+    }
 }
