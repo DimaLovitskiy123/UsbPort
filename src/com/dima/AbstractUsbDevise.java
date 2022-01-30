@@ -9,8 +9,6 @@ public abstract class AbstractUsbDevise {
         this.typeOfDevise = typeOfDevise;
     }
 
-
-
     public String getModel() {
         return model;
     }
